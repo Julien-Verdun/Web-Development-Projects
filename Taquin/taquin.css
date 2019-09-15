@@ -1,0 +1,101 @@
+#body {
+    width: 500px;
+    height: 600px;
+}
+
+
+#taquin {
+    border-radius: 5px;
+    background: #AA0000;
+    position: fixed;
+    top: 60px;
+    left: 220px;
+    width:320px;
+    height: 320px;
+}
+
+
+#taquin_window {
+    background: skyblue;
+    border-radius: 5px;
+    position: relative;
+    background: #BB0000;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width:300px;
+    height: 300px;
+}
+
+p[type=case]{
+    border-radius: 5px;
+    border-width: 3px;
+    background: #BBBBBB;
+    border-color: black;
+    border-style: groove;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    text-align-last: center;
+    align-content: center;
+    width:70px; height:70px;
+    
+}
+
+
+
+#first_grid {
+    display: grid;
+    border-radius: 2px;
+    position: relative;
+    width:300px; height:300px;
+    top:0px; left:5px;
+    margin-bottom: 5px;
+    grid-template-columns: repeat(4,75px);
+    grid-template-rows: repeat(4,75px);
+}
+
+
+#color_input {
+    
+}
+
+#color_text {
+    font-style:normal;
+    font-size: 15px;
+    margin-left: 50px;
+    color:black;
+}
+
+
+div[class=color_selector] {
+    display:list-item;
+    margin-left: 50px;
+}
+
+input[type=range]{
+}
+
+p[type = range_color] {
+    font-style: oblique;
+    color:black;
+    font-size: 15px;
+}
+
+p[type = value_color] {
+    font-style: oblique;
+    color:black;
+    font-size: 15px;
+}
+
+#randim_div {
+    background-color:darkkhaki;
+    width:1000px;
+    height:40px;
+    left:500px;
+    
+}
+
+
+

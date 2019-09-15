@@ -1,0 +1,84 @@
+#title_display {
+    margin-left: 140px;
+    margin-top: 30px;
+    align-content: center;
+}
+
+#background_calculatrice {
+    border-radius: 5px;
+    background: #DDDDDD;
+    border-color: black;
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    width:200px;
+    height: 220px;
+    border-radius: 2px;
+    border-color: #AAAAAA;
+    border-width: 1px;
+    border-style: groove;
+}
+
+
+#window_calculatrice {
+    border-radius: 1;
+    background: skyblue;
+    border-radius: 2px;
+    position: relative;
+    border-color: black;
+    top: 10px;
+    margin-left: 10px; margin-right: 10px;
+    height: 20px;
+    border-radius: 2px;
+    border-color: #AAAAAA;
+    border-width: 1px;
+    border-style: groove;
+}
+
+
+p[type=barre]{
+    position: relative;
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+button[type=case]{
+    border-radius: 2px;
+    background: #BBBBBB;
+    border-color: black;
+    border-width: 1px;
+    position: relative;
+    text-align: center;
+    top: 1px;
+    left: 10px;
+    width:20px;
+    height: 20px;
+}
+
+button[id=case_egale]{
+    border-radius: 2px;
+    background: #BBBBBB;
+    border-color: black;
+    border-width: 1px;
+    position: relative;
+    text-align: center;
+    top: 1px;
+    left: 10px;
+    width:66px;
+    height: 20px;
+}
+
+
+#first_grid {
+    display: grid;
+    background:#DDDDDD;
+    border-radius: 2px;
+    width: 180px ; height: 170px;
+    position: relative;
+    top: 25px ; 
+    margin-left: 10px; margin-right: 10px;
+    grid-template-columns: repeat(4,30px);
+    grid-template-rows: repeat(5,30px);
+    column-gap: 15px;
+}

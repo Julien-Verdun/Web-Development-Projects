@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html, lang=fr>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Taquin</title>
+        <meta name="description" content="Reproduction of the taquin game interface"><link rel="stylesheet" href="taquin.css">
+        <link rel="stylesheet" href="taquin.css">
+    </head>
+    
+    <body id = "body">
+        
+        <div>
+        Welcome, use the keys ZSQD to move the squares or directly click on the square you want to move.
+            
+        Enjoy !
+        </div>
+        
+        <div id = taquin>
+            <div id = taquin_window>
+                <div id = first_grid>
+                    <p type = "case" id = "case1" nb = "1" pos = "1" trx = "0" try = "0" >1</p>
+                    <p type = "case" id = "case2" nb = "2" pos = "2" trx = "0" try = "0" >2</p>
+                    <p type = "case" id = "case3" nb = "3" pos = "3" trx = "0" try = "0" >3</p>
+                    <p type = "case" id = "case4" nb = "4" pos = "4" trx = "0" try = "0" >4</p>
+                    <p type = "case" id = "case5" nb = "5" pos = "5" trx = "0" try = "0" >5</p>
+                    <p type = "case" id = "case6" nb = "6" pos = "6" trx = "0" try = "0" >6</p>
+                    <p type = "case" id = "case7" nb = "7" pos = "7" trx = "0" try = "0" >7</p>
+                    <p type = "case" id = "case8" nb = "8" pos = "8" trx = "0" try = "0" >8</p>
+                    <p type = "case" id = "case9" nb = "9" pos = "9" trx = "0" try = "0" >9</p>
+                    <p type = "case" id = "case10" nb = "10" pos = "10" trx = "0" try = "0" >10</p>
+                    <p type = "case" id = "case11" nb = "11" pos = "11" trx = "0" try = "0" >11</p>
+                    <p type = "case" id = "case12" nb = "12" pos = "12" trx = "0" try = "0" >12</p>
+                    <p type = "case" id = "case13" nb = "13" pos = "13" trx = "0" try = "0" >13</p>
+                    <p type = "case" id = "case14" nb = "14" pos = "14" trx = "0" try = "0" >14</p>
+                    <p type = "case" id = "case15" nb = "15" pos = "15" trx = "0" try = "0" >15</p>
+                </div>
+            </div>
+        </div>
+
+        <div id = "color_input">
+            <p id = "color_text"> Change the color of the squares : </p>
+            
+            <div class = "color_selector">
+                <p type = "range_color"> Red </p>
+                <input type="range" id = "input_range_red" step = 1 min="0" max="255" onchange="change_color('red',this.value)" value = "127"/>
+                <p id = "range_value_red" type = "value_color"> 50 </p>
+            </div>
+            
+            <div  class = "color_selector">
+                <p type = "range_color"> Green </p>
+                <input type="range" id = "input_range_green" step = 1 min="0" max="255" onchange="change_color('green',this.value)" value = "127"/>
+                <p id = "range_value_green" type = "value_color"> 50 </p>
+            </div>
+            
+            <div  class = "color_selector">
+                <p type = "range_color"> Blue </p>
+                <input type="range" id = "input_range_blue" step = 1 min="0" max="255" onchange="change_color('blue',this.value)" value = "127"/>
+                <p id = "range_value_blue" type = "value_color"> 50 </p>
+            </div>
+        </div>
+        
+        
+        <div id = "random_div">
+            <button id = "button_random" onclick = "randomise_square()"> Shuffle squares </button>
+        </div>
+    
+    </body>
+
+    <script src = "taquin.js"></script>
+
+</html>

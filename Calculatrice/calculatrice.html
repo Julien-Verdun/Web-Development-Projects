@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html, lang=fr>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Calculatrice</title>
+        <meta name="description" content="Reproduction of a given calculatrice interface"><link rel="stylesheet" href="calculatrice.css">
+        <link rel="stylesheet" href="calculatrice.css">
+    </head>
+    
+    
+    <h3 id = title_display>Calculatrice</h3>
+
+    <div id = "background_calculatrice">
+        <div id = "window_calculatrice">
+            <p type = "barre" id = "total_display">0</p>
+        </div>
+        
+        <div id = first_grid>
+            <button type = "case" id = "button1" onclick="change_current_number(1)">1</button>
+            <button type = "case" id = "button2" onclick="change_current_number(2)">2</button>
+            <button type = "case" id = "button3" onclick="change_current_number(3)">3</button>
+            <button type = "case" id = "buttonp" onclick="change_current_number('+')">+</button>
+            <button type = "case" id = "button4" onclick="change_current_number(4)">4</button>
+            <button type = "case" id = "button5" onclick="change_current_number(5)">5</button>
+            <button type = "case" id = "button6" onclick="change_current_number(6)">6</button>
+            <button type = "case" id = "buttonm" onclick="change_current_number('-')">-</button>
+            <button type = "case" id = "button7" onclick="change_current_number(7)">7</button>
+            <button type = "case" id = "button8" onclick="change_current_number(8)">8</button>
+            <button type = "case" id = "button9" onclick="change_current_number(9)">9</button>
+            <button type = "case" id = "buttonx" onclick="change_current_number('x')">x</button>
+            <button type = "case" id = "button0" onclick="change_current_number(0)">0</button>
+            <button type = "case" id = "buttonpg" onclick="change_current_number('(')">(</button>
+            <button type = "case" id = "buttonpd" onclick="change_current_number(')')">)</button>
+            <button type = "case" id = "buttond" onclick="change_current_number('/')">&divide;</button>
+            <button type = "case" id = "buttonf" onclick="delete_last()">&larr;</button>
+            <button type = "case" id = "buttonpo" onclick="change_current_number('.')">.</button>
+            <button type = "case", id = "case_egale" onclick="comput_total()">=</button>
+        </div>        
+        
+    </div>
+
+    
+<script src="calculatrice.js"></script>
+    
+    
+</html>
