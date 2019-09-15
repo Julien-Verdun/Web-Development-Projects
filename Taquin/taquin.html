@@ -11,10 +11,19 @@
     <body id = "body">
         
         <div>
-        Welcome, use the keys ZSQD to move the squares or directly click on the square you want to move.
-            
-        Enjoy !
+            <h2>Welcome to the TAQUIN game</h2>
+            <p id = "presentation">
+            You can use the keys Z, S, Q, D to move the squares or you can directly click on the square you want to move. 
+            Your goal is to sort the squares by ascending order.
+            </p>
+            <h3>Enjoy !!</h3>
         </div>
+        
+        
+        <div id = "random_div">
+            <button id = "button_random" onclick = "randomise_square()"> Shuffle squares </button>
+        </div>
+        
         
         <div id = taquin>
             <div id = taquin_window>
@@ -38,6 +47,11 @@
             </div>
         </div>
 
+        
+            
+        
+        
+        
         <div id = "color_input">
             <p id = "color_text"> Change the color of the squares : </p>
             
@@ -61,9 +75,7 @@
         </div>
         
         
-        <div id = "random_div">
-            <button id = "button_random" onclick = "randomise_square()"> Shuffle squares </button>
-        </div>
+        
     
     </body>
 

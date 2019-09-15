@@ -1,60 +1,55 @@
 #body {
-    width: 500px;
-    height: 600px;
 }
+
+#presentation {
+    font-size: 17px;
+    width:80%;
+}
+
 
 
 #taquin {
     border-radius: 5px;
-    background: #AA0000;
-    position: fixed;
-    top: 60px;
-    left: 220px;
-    width:320px;
-    height: 320px;
+    position: relative;
+    left: 120px;
+    width:340px;
+    height: 360px;
 }
 
 
 #taquin_window {
-    background: skyblue;
     border-radius: 5px;
     position: relative;
-    background: #BB0000;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
     margin-right: 10px;
-    width:300px;
-    height: 300px;
 }
-
-p[type=case]{
-    border-radius: 5px;
-    border-width: 3px;
-    background: #BBBBBB;
-    border-color: black;
-    border-style: groove;
-    position: relative;
-    text-align: center;
-    vertical-align: middle;
-    text-align-last: center;
-    align-content: center;
-    width:70px; height:70px;
-    
-}
-
 
 
 #first_grid {
     display: grid;
     border-radius: 2px;
     position: relative;
-    width:300px; height:300px;
-    top:0px; left:5px;
-    margin-bottom: 5px;
     grid-template-columns: repeat(4,75px);
     grid-template-rows: repeat(4,75px);
 }
+
+
+p[type=case]{
+    border-radius: 5px;
+    border-width: 3px;
+    background-color: darksalmon;
+    border-color: black;
+    border-style: groove;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width:70px; height:70px;
+    font-size: 25px;
+    
+}
+
+
 
 
 #color_input {
@@ -63,37 +58,36 @@ p[type=case]{
 
 #color_text {
     font-style:normal;
-    font-size: 15px;
-    margin-left: 50px;
-    color:black;
+    font-size: 17px;
 }
 
 
 div[class=color_selector] {
-    display:list-item;
-    margin-left: 50px;
+    display:inline-flex;
+    margin-right:50px
 }
 
 input[type=range]{
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 p[type = range_color] {
     font-style: oblique;
     color:black;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 p[type = value_color] {
     font-style: oblique;
     color:black;
-    font-size: 15px;
+    font-size: 17px;
 }
 
-#randim_div {
-    background-color:darkkhaki;
-    width:1000px;
-    height:40px;
-    left:500px;
+#button_random {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
     
 }
 

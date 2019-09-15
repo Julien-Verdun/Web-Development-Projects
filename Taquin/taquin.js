@@ -211,9 +211,6 @@ function move(nb_square,pos_square) {
     */
     if (can_move_square(pos_square)){
         move_squares(nb_square,pos_square);
-        console.log("Square " + pos_square + " has been moved !");
-    } else {
-        console.log("You can't move");
     }
 }
 
@@ -227,7 +224,6 @@ function pos_to_x_y(pos) {
 
 
 function move_keyboard(keyValue) {
-    console.log(keyValue);
     var pos_square = -10;
     //"ArrowDown"
     if (keyValue === "KeyS") {
@@ -266,11 +262,8 @@ function move_keyboard(keyValue) {
             }
         }
         if (nb_square === 0){
-            console.log("Something went wrong !");
             nb_square += 15;
         }
-        console.log(nb_square);
-        console.log(pos_square);
         move_squares(nb_square,pos_square);
     }
 }
@@ -295,8 +288,6 @@ function move_squares(nb_case1,pos_case1){
     cases[nb_case1-1].setAttribute("try",tr_y);
     cases[nb_case1-1].setAttribute("pos",pos_empty_square);
     cases[nb_case1-1].style.transform = "translate("+ tr_x + "px," + tr_y + "px)";
-    
-    console.log("Square " + nb_case1 + " Move in x direction of " + tr_x + " and in y direction of " + tr_y);
     
     pos_empty_square = pos_case1;
 }
@@ -412,7 +403,6 @@ function change_color(color,value){
         if (blue.length < 2) {blue = "0"+blue;}
         
         var new_colo = "#" + red + green + blue;
-        console.log("new_colo",new_colo);
         cases[i].style.background = new_colo;
     }
 }
