@@ -80,18 +80,15 @@ function change_current_number(x){
         if (isNaN(Number(x)) === false) {
             // si on a deja clique sur un nombre precedemment
             if (liste_x.length >= 1 && isNaN(Number(liste_x[liste_x.length-1])) === false) {
-                var i = 1;
-                liste_x.pop();
-                while (isNaN(Number(liste_x[liste_x.length-1])) === false && i < liste_x.length) {
+                operations_texte +=x;
+                x = Number(x);
+                var i = 0;
+                while (liste_x.length >= 1 && isNaN(Number(liste_x[liste_x.length-1])) === false) {
                     i++;
+                    x += (Number(liste_x[liste_x.length-1])*10**i);
                     liste_x.pop();
                 }
-                
-                x = Number(operations_texte.substr(operations_texte.length-i-1,i)+x);
-                
-                operations_texte = operations_texte.substr(0,operations_texte.length - i - 1) + x;
-                
-                liste_x.push(x);
+                liste_x.push(x);           
             }
             // si on avait pas cliqué sur un nombre a l'étape d'avant, on l'ajoute simplement à la suite
             else {
@@ -112,6 +109,11 @@ function change_current_number(x){
                 */
             }
             // si on ne clique pas sur un point
+            else if (x === "(" | x === ")") {
+                liste_x.push(x);
+                operations_texte += x;
+            }
+            
             else {
                 console.log("Sorry, I didn't understand your request !!")  
             }
@@ -143,10 +145,13 @@ function delete_last() {
 
 
 
+function new_operation(full_operation,ind_b,ind_e) {
+    
+}
+
 
 
 function decode_operations() {
-    var number= 0;
     console.log("Operations : ",liste_x);
     
     // Recherche d'une erreur dans la ligne
@@ -161,6 +166,11 @@ function decode_operations() {
         }
     }
     
+    // si la liste ne contient qu'un nombre, c'est le résultat, on le renvoie
+    if (liste_x.length === 1 && isNaN(Number(liste_x[0])) === false) {
+        return Number(liste_x[0]);
+    }
+    
     //recherche de parenthese dans la chaine d'operations
     for (var i = 0; i< liste_x.length ; i++) {
         //accolade ouvrante
@@ -170,9 +180,10 @@ function decode_operations() {
                     //var sub_operation = decode_operations(operations.substr[i+1,j-1]);
                     //operations[i,j] = sub_operation;
                     console.log("Parentheses found");
-                    var sub_number = decode_operations(liste_x.substr[i+1,j-1]);
-                    liste_x[i,j] = +sub_number;
-                    number += sub_number;
+                    var sub_number = decode_operations(liste_x.slice[i+1,j-1]);
+                    liste_x = liste_x.slice(0,i).push(sub_number).concat(liste_x.slice(j+1,liste_x.length));
+                    //liste_x[i,j] = +sub_number;
+                    return decode_operations();
                 }
             }
         }
@@ -180,25 +191,95 @@ function decode_operations() {
     //ensuite les mutiplications et divisions
     for (var i = 0; i< liste_x.length ; i++) {
         if (liste_x[i]==="/" || liste_x[i]==="x"){
+            // si il s'agit d'une division, on divise les deux facteuts
             if (liste_x[i] === "/") {
-                number += liste_x[i-1]/liste_x[i+1]
-            } else {
-                number += liste_x[i-1]*liste_x[i+1]
+                // resultat de la division
+                var sub_number = Number(liste_x[i-1])/Number(liste_x[i+1]);
+                
+                // modification de la liste_x avec le nouveau resultat
+                new_liste = [];
+                if (i-1 > 0) { 
+                    new_liste = liste_x.slice(0,i-1); 
+                }
+                new_liste.push(sub_number);
+                if (i+2 < liste_x.length) {
+                    new_liste.concat(liste_x.slice(i+2,liste_x.length))
+                };
+                liste_x = new_liste;
+                
+                console.log("Sub-list : ",liste_x);
+                
+                return decode_operations();
+                
+            } 
+            // si il s'agit d'une multiplication, on multiplie les deux facteurs
+            else {
+                // resultat de la multiplication
+                var sub_number = Number(liste_x[i-1])*Number(liste_x[i+1]);
+                
+                // modification de la liste_x avec le nouveau resultat
+                new_liste = [];
+                if (i-1 > 0) { 
+                    new_liste = liste_x.slice(0,i-1); 
+                }
+                new_liste.push(sub_number);
+                if (i+2 < liste_x.length) {
+                    new_liste.concat(liste_x.slice(i+2,liste_x.length))
+                };
+                liste_x = new_liste;
+                
+                console.log("Sub-list : ",liste_x);
+                
+                return decode_operations();
             }
         }
     }
     // ensuite les additions et soustractions
     for (var i = 0; i< liste_x.length ; i++) {
         if (liste_x[i]==="+" || liste_x[i]==="-"){
+            // si il s'agit d'une addition, on somme les deux termes
             if (liste_x[i] === "+") {
-                number += liste_x[i-1] + liste_x[i+1]
-            } else {
-                number += liste_x[i-1] - liste_x[i+1]
+                // resultat de l'addition
+                var sub_number = Number(liste_x[i-1]) + Number(liste_x[i+1]);
+                
+                // modification de la liste_x avec le nouveau resultat
+                new_liste = [];
+                if (i-1 > 0) { 
+                    new_liste = liste_x.slice(0,i-1); 
+                }
+                new_liste.push(sub_number);
+                if (i+2 < liste_x.length) {
+                    new_liste.concat(liste_x.slice(i+2,liste_x.length))
+                };
+                liste_x = new_liste;
+                
+                console.log("Sub-list : ",liste_x);
+                
+                return decode_operations();
+                
+            } 
+            // si il s'agit d'une soustraction, on soustrait les deux termes
+            else {
+                // resultat de la soustraction
+                var sub_number = Number(liste_x[i-1]) - Number(liste_x[i+1]);
+                
+                // modification de la liste_x avec le nouveau resultat
+                new_liste = [];
+                if (i-1 > 0) { 
+                    new_liste = liste_x.slice(0,i-1); 
+                }
+                new_liste.push(sub_number);
+                if (i+2 < liste_x.length) {
+                    new_liste.concat(liste_x.slice(i+2,liste_x.length))
+                };
+                liste_x = new_liste;
+                
+                console.log("Sub-list : ",liste_x);
+                
+                return decode_operations();
             }
         }
     }     
-    console.log("Total : ", number);
-    return number;
 }
 
 
