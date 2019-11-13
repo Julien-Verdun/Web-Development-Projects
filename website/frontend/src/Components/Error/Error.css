@@ -1,0 +1,13 @@
+#error_div {
+    text-align: center;
+}
+
+#error-button {
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: black;
+    background-color: rgb(79, 134, 134);
+    border-color: rgb(79, 134, 134);
+    ;
+}

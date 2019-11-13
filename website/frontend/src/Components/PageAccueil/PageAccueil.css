@@ -1,0 +1,19 @@
+#accueil-div {}
+
+#accueil-title {
+    text-align: center;
+    margin: 10px;
+}
+
+.project-description {
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.italic-text {
+    font-style: italic;
+}

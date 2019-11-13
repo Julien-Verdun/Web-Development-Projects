@@ -1,0 +1,1 @@
+db.profils.find({"hobbies":"Crossfit"},{"city":/ly/i})

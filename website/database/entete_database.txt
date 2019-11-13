@@ -1,0 +1,105 @@
+Code Etablissement
+Etablissement
+Année
+Ville
+Code commune
+Académie
+Département
+Secteur Public/Prive
+Effectif Présents série L
+Effectif Présents série ES
+Effectif Présents série S
+Effectif Présents série STG
+Effectif Présents série STI2D
+Effectif Présents série STD2A
+Effectif Présents série STMG
+Effectif Présents série STI
+Effectif Présents série STL
+Effectif Présents série ST2S
+Effectif Présents série Musique Danse
+Effectif Présents série Hotellerie
+Effectif Présents Total séries
+Taux Brut de Réussite série L
+Taux Brut de Réussite série ES
+Taux Brut de Réussite série S
+Taux Brut de Réussite série STG
+Taux Brut de Réussite série STI2D
+Taux Brut de Réussite série STD2A
+Taux Brut de Réussite série STMG
+Taux Brut de Réussite série STI
+Taux Brut de Réussite série STL
+Taux Brut de Réussite série ST2S
+Taux Brut de Réussite série Musique Danse
+Taux Brut de Réussite série Hotellerie
+Taux Brut de Réussite Total séries
+Taux Réussite Attendu Académie série L
+Taux Réussite Attendu Académie série ES
+Taux Réussite Attendu Académie série S
+Taux Réussite Attendu Académie série STG
+Taux Réussite Attendu Académie série STI2D
+Taux Réussite Attendu Académie série STD2A
+Taux Réussite Attendu Acad_serie_STMG
+Taux Réussite Attendu Académie série STI
+Taux Réussite Attendu Académie série STL
+Taux Réussite Attendu Académie série ST2S
+Taux Réussite Attendu Académie série Musique Danse
+Taux Réussite Attendu Académie série Hotellerie
+Taux Réussite Attendu Académie Total_series
+Taux Réussite Attendu France série L
+Taux Réussite Attendu France série ES
+Taux Réussite Attendu France série S
+Taux Réussite Attendu France série STG
+Taux Réussite Attendu France série STI2D
+Taux Réussite Attendu France série STD2A
+Taux Réussite Attendu France série STMG
+Taux Réussite Attendu France série STI
+Taux Réussite Attendu France série STL
+Taux Réussite Attendu France série ST2S
+Taux Réussite Attendu France série Musique Danse
+Taux Réussite Attendu France série Hotellerie
+Taux Réussite Attendu France Total séries
+Taux_Mention_brut_serie_L
+Taux_Mention_brut_serie_ES
+Taux_Mention_brut_serie_S
+Taux_Mention_brut_serie_STI2D
+Taux_Mention_brut_serie_STD2A
+Taux_Mention_brut_serie_STMG
+Taux_Mention_brut_serie_STL
+Taux_Mention_brut_serie_ST2S
+Taux_Mention_brut_serie_Musiq_Danse
+Taux_Mention_brut_serie_Hotellerie
+Taux_Mention_brut_toutes_series
+Taux_Mention_attendu_serie_L
+Taux_Mention_attendu_serie_ES
+Taux_Mention_attendu_serie_S
+Taux_Mention_attendu_serie_STI2D
+Taux_Mention_attendu_serie_STD2A
+Taux_Mention_attendu_serie_STMG
+Taux_Mention_attendu_serie_STL
+Taux_Mention_attendu_serie_ST2S
+Taux_Mention_attendu_serie_Musiq_Danse
+Taux_Mention_attendu_serie_Hotellerie
+Taux_Mention_attendu_toutes_series
+Structure pédagogique en 5 groupes
+Structure pédagogique en 7 groupes
+Pourcentage Bacheliers sortants 2de 1re Terminale Etablissement
+Pourcentage Bacheliers sortants Terminales Etablissement
+Pourcentage Bacheliers sortants 2de 1re Terminale Acad
+Pourcentage Bacheliers sortants Terminale Acad
+Pourcentage Bacheliers sortants 2de 1re Terminale France
+Pourcentage Bacheliers sortants Terminale France
+Effectif de seconde
+Effectif de première
+Effectif de terminale
+Taux accès Brut seconde BAC
+Taux accès Attendu Acad seconde BAC
+Taux accès Attendu France seconde BAC
+Taux accès Brut première BAC
+Taux accès Attendu Acad première BAC
+Taux accès Attendu France première BAC
+Taux accès Brut terminale BAC
+Taux accès Attendu France terminale BAC
+Libellé région
+Code région
+Code département
+Libellé département
