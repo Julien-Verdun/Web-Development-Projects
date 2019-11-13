@@ -165,7 +165,6 @@ class PageAccueil extends Component {
         <h5>Frontend</h5>
         Le frontend est codé avec le framework
         <p className="bold-text">React</p>.
-        <GeneralStatistics />
       </div>
     );
   }
