@@ -34,3 +34,23 @@ Le backend de l'application web est codé avec **Node.JS**. Le code se trouve da
 ## Frontend
 
 Le frontend est codé avec le framework **React** et utilise des éléments de style **Bootstrap**.
+
+---
+
+# Application overview
+
+### Login page
+
+![login](./project_overview/login_page.PNG)
+
+### Home page
+
+![home_page](./project_overview/home_page.PNG)
+
+### All establishment page
+
+![allProfil](./project_overview/allProfil_page.PNG)
+
+### General statistics
+
+![gene_stat](./project_overview/statistic_page.PNG)

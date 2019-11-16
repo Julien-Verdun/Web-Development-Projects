@@ -45,4 +45,8 @@ The calculator alows you to compute some calculation with a simple calculator in
 
 ## Description of the application
 
-The folder **website** includes the differents files and explanations required to use and visualise data coming from an open source French gouvernment database.
+The folder **website** includes the differents files and explanations required to use and visualise data coming from an open source French gouvernment database regarding high schools grades and student numbers.
+
+## Overview of the web application
+
+![webapp](website/project_overview/allProfil_page.PNG)

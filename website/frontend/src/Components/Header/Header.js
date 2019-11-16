@@ -38,7 +38,7 @@ class Header extends Component {
 
   render() {
     return (
-      <div className="container page-header">
+      <div className="page-header">
         <div className="row">
           <div className="col">
             <a className="header-col" href="/home/fr">

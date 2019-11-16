@@ -1,5 +1,11 @@
+.allprofil {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
 #profilTable {
-    width: 80%;
+    width: 90%;
     height: 500px;
     margin: 40px;
 }

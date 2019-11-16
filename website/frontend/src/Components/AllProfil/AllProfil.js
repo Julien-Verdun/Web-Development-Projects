@@ -91,7 +91,7 @@ class AllProfil extends Component {
 
   render() {
     return (
-      <div>
+      <div className="allprofil">
         <h3>Filtering results :</h3>
         <form onSubmit={this.handleSubmit}>
           <div className="form-group">

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import fieldsTranslation from "./fieldsTranslation";
+import "./Profil.css";
 
 class Profil extends Component {
   constructor(props) {
@@ -137,15 +138,15 @@ class Profil extends Component {
 
   render() {
     return (
-      <div>
-        <h1>
+      <div className="profil">
+        <h3>
           {this.state.etablissement.replace(/_/gi, " ") +
             " (" +
             this.state.academie +
             ", " +
             this.state.ville +
             ")"}
-        </h1>
+        </h3>
         <table className="table table-bordered">
           <thead>
             <tr>

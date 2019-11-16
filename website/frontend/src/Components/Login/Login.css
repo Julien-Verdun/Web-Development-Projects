@@ -1,5 +1,8 @@
 #login-div {
-    width: 40%;
+    width: 50%;
     height: 30%;
     margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    /* text-align: center; */
 }
