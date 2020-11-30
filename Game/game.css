@@ -1,0 +1,26 @@
+h1,h3,#event-display {text-align:center;}
+
+.title{margin:3%;}
+
+#grid-container{
+    width: 400px;
+    height: 400px;
+    margin-top:2%;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.cell {
+    display:flex;
+    background-color: #deb887;
+    width:100px;
+    height: 100px;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 2px;
+    border-style: groove;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+}
