@@ -1,6 +1,3 @@
-#body {
-}
-
 #presentation {
     font-size: 17px;
     width:80%;
@@ -38,7 +35,7 @@
 p[type=case]{
     border-radius: 5px;
     border-width: 3px;
-    background-color: darksalmon;
+    background-color: #e9967a;
     border-color: black;
     border-style: groove;
     position: relative;
@@ -50,11 +47,6 @@ p[type=case]{
 }
 
 
-
-
-#color_input {
-    
-}
 
 #color_text {
     font-style:normal;

@@ -5,11 +5,30 @@ Those projects has been developped with programming languages HTML, CSS and Java
 
 ---
 
+## 2048 game
+
+### Description of the game
+
+The folder **2048** includes the differents files (HTML, CSS and Javacript) which allows you to play the game 2048 :
+
+- 2048.css
+- 2048.html
+- 2048.js.
+
+The goal is for the player to merge identical cells (for example, 2 and 2 are merge into 4, 4 and 4 into 8 and so on) in order to reach the highest possible score and the highest possible cell's value (2048 is not a limit). The game ends when no moves are allow in any of the 4 directions.
+Use the arrow keys in order to move the cells.
+
+### Overview of the game
+
+![2048 game](2048/2048_demonstration.PNG)
+
+---
+
 ## Taquin game
 
 ### Description of the game
 
-The folder **Taquin** includes the differents files (HTML, CSS and Javacript) which allow you to play the game :
+The folder **Taquin** includes the differents files (HTML, CSS and Javacript) which allows you to play the game :
 
 - taquin.css
 - taquin.html
@@ -27,7 +46,7 @@ The goal is for the player to sort the square by ascening order (defined by thei
 
 ## Description of the application
 
-The folder **Calculatrice** includes the differents files (HTML, CSS and Javascript) which allow you to use the calculator :
+The folder **Calculatrice** includes the differents files (HTML, CSS and Javascript) which allows you to use the calculator :
 
 - calculatrice.css
 - calculatrice.html
@@ -45,7 +64,11 @@ The calculator alows you to compute some calculation with a simple calculator in
 
 ## Description of the application
 
-The folder **website** includes the differents files and explanations required to use and visualise data coming from an open source French gouvernment database regarding high schools grades and student numbers.
+The folder **website** includes the differents files, (frontend and backend) and explanations required to use and visualise data coming from an open source French gouvernment database regarding high schools grades and student numbers.
+
+The appication is coded with framework **React** for frontend and **NodeJS** for backend. The data are inserted in a **MongoDB** database.
+
+Open the folder website for more details about this application.
 
 ## Overview of the web application
 

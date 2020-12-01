@@ -9,7 +9,6 @@
     </head>
     
     <body id = "body">
-        
         <div>
             <h2>Welcome to the TAQUIN game</h2>
             <p id = "presentation">
@@ -19,13 +18,11 @@
             <h3>Enjoy !!</h3>
         </div>
         
-        
-        <div id = "random_div">
-            <button id = "button_random" onclick = "randomise_square()"> Shuffle squares </button>
-        </div>
-        
+
         
         <div id = taquin>
+
+            <button id = "button_random" onclick = "randomise_square()"> Shuffle squares </button>
             <div id = taquin_window>
                 <div id = first_grid>
                     <p type = "case" id = "case1" nb = "1" pos = "1" trx = "0" try = "0" >1</p>
@@ -52,7 +49,7 @@
         
         
         
-        <div id = "color_input">
+        <!-- <div id = "color_input">
             <p id = "color_text"> Change the color of the squares : </p>
             
             <div class = "color_selector">
@@ -72,7 +69,7 @@
                 <input type="range" id = "input_range_blue" step = 1 min="0" max="255" onchange="change_color('blue',this.value)" value = "127"/>
                 <p id = "range_value_blue" type = "value_color"> 50 </p>
             </div>
-        </div>
+        </div> -->
         
         
         
