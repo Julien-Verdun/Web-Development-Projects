@@ -5,6 +5,8 @@ class Game {
     this.createBoard();
     this.score = 2;
     this.updateScore();
+    var event = document.getElementById("event-display");
+    event.innerHTML = "";
   }
 
   initBoard() {
@@ -54,6 +56,8 @@ class Game {
         cell.innerHTML = this.board[i][j] === 0 ? " " : this.board[i][j];
         cell.style.backgroundColor =
           this.board[i][j] === 0 ? "#bc9" : this.perc2color(this.board[i][j]);
+        cell.style.width = parseInt(400 / board_size) + "px";
+        cell.style.height = parseInt(400 / board_size) + "px";
         line.appendChild(cell);
       }
       grid.appendChild(line);
@@ -202,12 +206,18 @@ class Game {
   end() {
     var event = document.getElementById("event-display");
     event.innerHTML = "You lose";
-    console.log("END");
   }
 }
 
 var board_size = 4;
 let game = new Game(board_size);
+
+slider = document.getElementById("slide-range");
+
+slider.addEventListener("change", (e) => {
+  board_size = slider.value;
+  game = new Game(board_size);
+});
 
 document.onkeydown = checkKey;
 
@@ -227,8 +237,3 @@ function checkKey(e) {
     game.move("right");
   }
 }
-
-// for (var i = 0; i < 100; i++) {
-//   game.move("up");
-//   game.move("left");
-// }

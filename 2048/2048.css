@@ -24,3 +24,7 @@ h1,h3,#event-display {text-align:center;}
     font-size: large;
     font-weight: bold;
 }
+.slidecontainer{
+    text-align: center;
+    margin:5%;
+}
