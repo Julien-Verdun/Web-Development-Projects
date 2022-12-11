@@ -4,7 +4,7 @@
 		"start": "node server.js"
 	},
 	"dependencies": {
-		"express": "^4.17.1",
+		"express": "^4.17.3",
 		"mongodb": "^3.3.3",
 		"password-hash": "^1.2.2"
 	}
